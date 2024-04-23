@@ -31,16 +31,9 @@ function Home() {
   
   return (
     <Layout>
-      <div className="flex gap-5 justify-center">
-        <button className="bg-gray-400" onClick={() => addCart()}>
-          ADD
-        </button>
-        <button className="bg-gray-400"   onClick={() => deleteCart()}>
-          Remove
-        </button>
-      </div>
+      
       <HeroSection />
-      <Filter />
+     
       <ProductCard />
       <Testimonial />
     </Layout>
