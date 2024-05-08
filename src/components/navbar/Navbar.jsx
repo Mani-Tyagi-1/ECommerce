@@ -19,11 +19,11 @@ export default function Navbar() {
   };
 
   const login = () => {
-    window.location.href = "/login";
+    window.location.href = "/registration/login";
   };
 
   const signup = () => {
-    window.location.href = "/signup";
+    window.location.href = "/registration/signup";
   };
 
   const context = useContext(myContext);
