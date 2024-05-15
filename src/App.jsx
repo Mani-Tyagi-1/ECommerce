@@ -44,8 +44,8 @@ function App() {
                 </ProtectedRouteForAdmin>
               }
             />
-            <Route path="/registration/login" element={<Login />} />
-            <Route path="/registration/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/productinfo" element={<ProductInfo />} />
             <Route
               path="/addproduct"

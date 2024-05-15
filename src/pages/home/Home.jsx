@@ -9,25 +9,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart , deleteFromCart } from "../../redux/cartSlide";
 
 function Home() {
-
-  const dispatch = useDispatch();
-  const cartItem = useSelector((state) => state.cart);
-
-  const addCart = () => {
-    dispatch(addToCart("shirt"))
-  }
-
-  const deleteCart = () => {
-    dispatch(deleteFromCart("shirt"));
-    
-  } 
-
-  console.log(cartItem);
-
-
-  // const context = useContext(myContext);
-  // console.log(context);
-
   
   return (
     <Layout>

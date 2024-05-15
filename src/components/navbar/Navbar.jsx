@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const user = JSON.parse(localStorage.getItem('user'));
+  const user = JSON.parse(localStorage.getItem("user"));
   // console.log(user);
 
   const logout = () => {
@@ -19,11 +19,11 @@ export default function Navbar() {
   };
 
   const login = () => {
-    window.location.href = "/registration/login";
+    window.location.href = "/login";
   };
 
   const signup = () => {
-    window.location.href = "/registration/signup";
+    window.location.href = "/signup";
   };
 
   const context = useContext(myContext);
@@ -304,7 +304,7 @@ export default function Navbar() {
                       className="text-sm font-medium text-gray-700 cursor-pointer  "
                       style={{ color: mode === "dark" ? "white" : "" }}
                     >
-                      login
+                      Login
                     </a>
                   )}
 
@@ -386,7 +386,7 @@ export default function Navbar() {
                       className="ml-2 text-sm font-medium text-gray-700 group-"
                       style={{ color: mode === "dark" ? "white" : "" }}
                     >
-                     {cartItems.length}
+                      {cartItems.length}
                     </span>
                     <span className="sr-only">items in cart, view bag</span>
                   </Link>
