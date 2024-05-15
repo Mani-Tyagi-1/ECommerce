@@ -121,6 +121,13 @@ export default function Navbar() {
                       >
                         Logout
                       </a>
+                      {/* <Link
+                        to={"/logout"}
+                        className="text-sm font-medium text-gray-900 "
+                        style={{ color: mode === "dark" ? "white" : "" }}
+                      >
+                        Logout
+                      </Link> */}
                     </div>
                   ) : (
                     " "
@@ -129,26 +136,33 @@ export default function Navbar() {
                     " "
                   ) : (
                     <div className="flow-root">
-                      <a
-                        onClick={login}
-                        className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
+                      <Link
+                        to={"/login"}
+                        className="text-sm font-medium text-gray-900 "
                         style={{ color: mode === "dark" ? "white" : "" }}
                       >
                         Login
-                      </a>
+                      </Link>
                     </div>
                   )}
                   {user ? (
                     " "
                   ) : (
                     <div className="flow-root">
-                      <a
+                      {/* <a
                         onClick={signup}
                         className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
                         style={{ color: mode === "dark" ? "white" : "" }}
                       >
                         Signup
-                      </a>
+                      </a> */}
+                      <Link
+                        to={"/signout"}
+                        className="text-sm font-medium text-gray-900 "
+                        style={{ color: mode === "dark" ? "white" : "" }}
+                      >
+                        Signup
+                      </Link>
                     </div>
                   )}
 
