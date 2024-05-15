@@ -114,13 +114,13 @@ export default function Navbar() {
 
                   {user ? (
                     <div className="flow-root">
-                      <a
+                      {/* <a
                         onClick={logout}
                         className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
                         style={{ color: mode === "dark" ? "white" : "" }}
                       >
                         Logout
-                      </a>
+                      </a> */}
                       {/* <Link
                         to={"/logout"}
                         className="text-sm font-medium text-gray-900 "
@@ -313,25 +313,25 @@ export default function Navbar() {
                   {user ? (
                     " "
                   ) : (
-                    <a
-                      onClick={login}
-                      className="text-sm font-medium text-gray-700 cursor-pointer  "
+                    <Link
+                      to={"/login"}
+                      className="text-sm font-medium text-gray-900 "
                       style={{ color: mode === "dark" ? "white" : "" }}
                     >
                       Login
-                    </a>
+                    </Link>
                   )}
 
                   {user ? (
                     " "
                   ) : (
-                    <a
-                      onClick={signup}
-                      className="text-sm font-medium text-gray-700 cursor-pointer  "
+                    <Link
+                      to={"/signup"}
+                      className="text-sm font-medium text-gray-900 "
                       style={{ color: mode === "dark" ? "white" : "" }}
                     >
                       Signup
-                    </a>
+                    </Link>
                   )}
                 </div>
 
